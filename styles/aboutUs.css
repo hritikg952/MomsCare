@@ -1,0 +1,81 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/** ABOUT US SECTION */
+
+.aboutus-page-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* margin-top: 100px; */
+  height: calc(100vh - 100px);
+  background-color: #efefef;
+}
+
+.aboutus-section-container{
+  display: flex;
+  background-color: #fff;
+
+  width: 650px;
+  border-radius: 10px;
+}
+
+.aboutus-image-section{
+  width: 40%;
+  background-color: #FE6A82;
+  border-radius: 10px 0 0 10px;
+}
+
+.aboutus-content-section{
+  width: 60%;
+  padding: 1.5em;
+}
+
+.aboutus-content-section h1{
+  margin-bottom: 10px;
+}
+/* **** */
+
+/** RESPONSIVE */
+
+@media(max-width: 435px){
+  .aboutus-section-container{
+    flex-direction: column;
+    width: 300px;
+    height: auto;
+  }
+
+  .mobile-nav-toggle{
+    display: block;
+    position: absolute;
+    width: 2rem;
+    aspect-ratio: 1;
+    top: 2rem;
+    right: 2rem;
+    z-index: 999;
+    background: url('/Asset/hamburger-menu.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+  }
+
+  .aboutus-image-section{
+    width: 100%;
+    height: 150px;
+    background-color: #FE6A82;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .aboutus-content-section{
+    width: 100%;
+    padding: 1.5em;
+  }
+}
+
+/* **** */

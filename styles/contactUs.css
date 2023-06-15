@@ -1,0 +1,167 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/** CONTACT SECTION */
+
+.contact-page-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: calc(100vh - 100px);
+  background-color: #efefef;
+} 
+
+.contact-section-container{
+  display: flex;
+  background-color: #fff;
+
+  width: 650px;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.contact-info-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  background-color: #FE6A82;
+  border-radius: 10px 0 0 10px;
+  padding: 1.5em;
+  gap: 20px;
+}
+
+.contact-info-container h1{
+  color: #fff;
+  font-size: 1.3em;
+}
+
+.contact-info-item{
+  display: flex;
+  align-items: center;
+}
+
+.contact-info-item div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 10px;
+}
+
+.contact-info-item img{
+  width: 20px;
+  aspect-ratio: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-info-item p{
+  color: #fff;
+  font-size: 0.7em;
+}
+
+.contact-info-item a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.contact-info-item span{
+  font-weight: 700;
+}
+
+.contact-form-main-container{
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  padding: 1.5em;
+}
+
+.contact-form-main-container h1{
+  margin-bottom: 10px;
+}
+
+.contact-form-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.contact-form-container div{
+  display: flex;
+  gap: 5px
+}
+
+.contact-form-input{
+  height: 36px;
+  padding: 5px;
+  width: 100%;
+}
+
+.contact-form-input-textarea{
+  height: 150px;
+  resize: none;
+}
+
+.contact-form-button{
+  padding: 0.3em 0.5em;
+  background-color: #FE6A82;
+  color: #fff;
+  font-size: 0.9em;
+  border: 2px solid #FE6A82;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.contact-form-button:hover{
+  cursor: pointer;
+  -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+}
+/* **** */
+
+/** RESPONSIVE */
+
+@media(max-width: 435px){
+  .contact-page-container{
+    margin-top: 100px;
+  }
+
+  .contact-section-container{
+    flex-direction: column-reverse;
+    width: 300px;
+    height: auto;
+  }
+
+  .mobile-nav-toggle{
+    display: block;
+    position: absolute;
+    width: 2rem;
+    aspect-ratio: 1;
+    top: 2rem;
+    right: 2rem;
+    z-index: 999;
+    background: url('/Asset/hamburger-menu.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+  }
+
+  .contact-info-container{
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+/* **** */
